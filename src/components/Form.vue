@@ -100,16 +100,11 @@ export default {
         phone: "",
         paymentment: null,
       },
-      curPhone: "",
       distances: [{ text: "Выберите дистанцию", value: null }, 3, 5, 10],
     };
   },
 
   computed: {
-    currentPhone() {
-      return "+7" + this.curPhone;
-    },
-
     valid() {
       if (!this.form.name) {
         return true;
